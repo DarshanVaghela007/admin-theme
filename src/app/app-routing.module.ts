@@ -138,7 +138,7 @@ const routes: Routes = [
     }
   },
   {
-    path: "faq",
+    path: 'faq',
     component: FaqComponent
   }
 ];

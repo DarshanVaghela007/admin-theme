@@ -45,3 +45,86 @@
 .edit {
   margin-right: 12px;
 }
+
+.popup {
+  background-color: rgba(0,0,0, .85);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 4rem;
+   padding: 0 25px;
+   height: 55px;
+   background-color: rgb(207, 207, 207);
+}
+
+.popup-close:link, .popup-close:visited {
+
+  line-height: 1;
+  font-size: 2rem;
+  color: #333;
+  display: inline-block;
+  transition: all .2s;
+}
+
+.popup-close:hover {
+  color: #333;
+  transform: scale(1.1);
+}
+
+.popup-content {
+  background-color: white;
+  box-shadow: 0 .5rem 1.5rem rgba(165, 165, 165, 0.2);
+  border-radius: 3px;
+  position: absolute;
+  width: 550px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  display: table;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(.3);
+  transition: all .4s .2s;
+}
+
+.popup:target .popup-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.question-area{
+  margin: 25px;
+}
+
+.faq-section {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #999;
+}
+
+.rich-text-editor{
+  margin: 25px;
+}
+
+.faq-btn{
+  width: 100%;
+}
+.faq-btn-section{
+  margin: 25px;
+}
+

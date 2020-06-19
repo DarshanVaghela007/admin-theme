@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
@@ -14,6 +15,7 @@ export class FaqComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
   onFaqDelete(index) {
     this.faqList.splice(index, 1);

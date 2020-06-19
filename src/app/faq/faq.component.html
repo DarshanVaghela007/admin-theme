@@ -3,7 +3,10 @@
       FAQ
   </div>
   <div class="faq-add">
-      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+    <a href="#popup">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+    </a>
+
   </div>
   <div *ngFor="let item of faqList, let i = index" class="faq-item">
     {{item}}
@@ -12,4 +15,20 @@
         <i class="fa fa-trash" aria-hidden="true" (click)="onFaqDelete(i)"></i>
     </div>
   </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+          <div class="popup-title">
+              <h4>Add FAQ</h4>
+              <a href="#section-avatar" class="popup-close">&times;</a>
+          </div>
+          <div class="question-area">
+            <textarea name="faq-section" id="faq-section" placeholder="Question" cols="5" rows="3" class="faq-section"></textarea>
+          </div>
+          <div class="rich-text-editor">
+              <div [froalaEditor]>Write something!!!</div>
+          </div>
+          <div class="faq-btn-section">
+              <button class="btn btn-success faq-btn">Add FAQ</button>
+          </div>
+      </div>
 </div>

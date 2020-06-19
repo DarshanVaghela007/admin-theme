@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { FaqComponent } from './faq/faq.component';
+import { FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 
 
 @NgModule({
@@ -20,13 +21,15 @@ import { FaqComponent } from './faq/faq.component';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot(),
     LayoutModule.forRoot(adminLteConf),
     LoadingPageModule, MaterialBarModule
   ],
   declarations: [
     AppComponent,
     HomeComponent,
-    FaqComponent
+    FaqComponent,
   ],
   bootstrap: [AppComponent]
 })
