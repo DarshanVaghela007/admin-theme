@@ -5,11 +5,11 @@
   <div class="faq-add">
       <i class="fa fa-plus-circle" aria-hidden="true"></i>
   </div>
-  <div *ngFor="let item of faqList" class="faq-item">
+  <div *ngFor="let item of faqList, let i = index" class="faq-item">
     {{item}}
     <div class="faq-edit-option">
         <i class="fa fa-pencil edit" aria-hidden="true"></i>
-        <i class="fa fa-trash" aria-hidden="true"></i>
+        <i class="fa fa-trash" aria-hidden="true" (click)="onFaqDelete(i)"></i>
     </div>
   </div>
 </div>

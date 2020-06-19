@@ -15,4 +15,8 @@ export class FaqComponent implements OnInit {
   ngOnInit() {
   }
 
+  onFaqDelete(index) {
+    this.faqList.splice(index, 1);
+  }
+
 }
