@@ -1,3 +1,4 @@
+import { FaqComponent } from './faq/faq.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -136,6 +137,10 @@ const routes: Routes = [
       customLayout: true
     }
   },
+  {
+    path: "faq",
+    component: FaqComponent
+  }
 ];
 
 @NgModule({

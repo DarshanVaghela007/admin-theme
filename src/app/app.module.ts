@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FaqComponent
   ],
   bootstrap: [AppComponent]
 })
